@@ -13,14 +13,14 @@ ImageSubscriber::ImageSubscriber(): Node("image_subscriber") {
 void ImageSubscriber::imageCallback(const sensor_msgs::msg::Image::SharedPtr msg) {
 
     try { 
-	    cv_ptr_ = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::MONO8);
-	}
-	catch (cv_bridge::Exception& e) {
-		RCLCPP_ERROR(this->get_logger(),"cv_bridge exception: %s", e.what());
-	}
+        cv_ptr_ = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::MONO8);
+    }
+    catch (cv_bridge::Exception& e) {
+        RCLCPP_ERROR(this->get_logger(),"cv_bridge exception: %s", e.what());
+    }
 
     frame_ = cv_ptr_->image; 
-	assert(frame_.empty()!=true); //does not work it seems
+    assert(frame_.empty()!=true); //does not work it seems
     
     if (count_ < num_ && (!frame_.empty())) {
         compression_params_.push_back(CV_IMWRITE_PNG_COMPRESSION);

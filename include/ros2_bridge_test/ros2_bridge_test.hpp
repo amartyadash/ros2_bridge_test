@@ -15,8 +15,7 @@
 
 namespace ariitk::ros2_bridge_test {
 
-class ImageSubscriber : public rclcpp::Node
-{
+class ImageSubscriber : public rclcpp::Node {
   public:
     ImageSubscriber();
 
