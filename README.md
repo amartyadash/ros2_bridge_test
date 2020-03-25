@@ -1,5 +1,6 @@
 # ros2_bridge_test
 A ROS2 image subscriber for testing ROS2-ROS1 bridge. 
+
 *Note: This README assumes you have also cloned the [ros_bridge_test](https://github.com/amartyadash/ros_bridge_test) repository to your ROS1 workspace.
 
 ## ROS2-ROS1 Bridge
@@ -7,6 +8,7 @@ Make sure you have the [ROS2-ROS1 bridge](https://github.com/ros2/ros1_bridge) i
 Follow the steps given in the following documentation to set up the environment needed for the bridge system:- http://ros2docs.org/ros1-bridge/ros1-bridge/
 
 Also make sure that you have not sourced either ROS1 or ROS2 workspaces in your `~/.bashrc` as we will switch between them.
+
 *Note : The following README assumes ROS1 distro : 'Melodic' with workspace name : 'catkin_ws' & ROS2 distro : 'Eloquent' with workspace name : 'dev_ws'.
 ## Dependencies
 The following package has these dependencies:
