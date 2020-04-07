@@ -30,4 +30,4 @@ class ImageSubscriber : public rclcpp::Node {
     std::string frame_id_;
 };
 
-}// namespace ariitk::ros2_bridge_test
+}//ariitk::ros2_bridge_test

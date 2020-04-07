@@ -1,0 +1,36 @@
+[0.012s] Invoking command in '/home/amartya/dev_ws/src/ros2_bridge_test/build/ros2_bridge_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/amartya/dev_ws/src/ros2_bridge_test/build/ros2_bridge_test -- -j12 -l12
+[0.052s] [35m[1mScanning dependencies of target ros2_bridge_test_lib[0m
+[0.073s] [ 25%] [32mBuilding CXX object CMakeFiles/ros2_bridge_test_lib.dir/src/ros2_image_sub.cpp.o[0m
+[3.723s] [ 50%] [32m[1mLinking CXX shared library libros2_bridge_test_lib.so[0m
+[3.900s] [ 50%] Built target ros2_bridge_test_lib
+[3.930s] [ 75%] [32m[1mLinking CXX executable ros2_bridge_test_node[0m
+[4.263s] [100%] Built target ros2_bridge_test_node
+[4.273s] Invoked command in '/home/amartya/dev_ws/src/ros2_bridge_test/build/ros2_bridge_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/amartya/dev_ws/src/ros2_bridge_test/build/ros2_bridge_test -- -j12 -l12
+[4.306s] Invoking command in '/home/amartya/dev_ws/src/ros2_bridge_test/build/ros2_bridge_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/amartya/dev_ws/src/ros2_bridge_test/build/ros2_bridge_test --target install -- -j12 -l12
+[4.365s] [ 50%] Built target ros2_bridge_test_lib
+[4.399s] [100%] Built target ros2_bridge_test_node
+[4.419s] [36mInstall the project...[0m
+[4.429s] -- Install configuration: ""
+[4.429s] -- Up-to-date: /home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/include/ros2_bridge_test
+[4.429s] -- Up-to-date: /home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/include/ros2_bridge_test/ros2_bridge_test.hpp
+[4.429s] -- Installing: /home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/lib/libros2_bridge_test_lib.so
+[4.431s] -- Set runtime path of "/home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/lib/libros2_bridge_test_lib.so" to ""
+[4.431s] -- Installing: /home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/lib/ros2_bridge_test/ros2_bridge_test_node
+[4.431s] -- Set runtime path of "/home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/lib/ros2_bridge_test/ros2_bridge_test_node" to ""
+[4.432s] -- Up-to-date: /home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/share/ament_index/resource_index/package_run_dependencies/ros2_bridge_test
+[4.432s] -- Up-to-date: /home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/share/ament_index/resource_index/parent_prefix_path/ros2_bridge_test
+[4.432s] -- Up-to-date: /home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/share/ros2_bridge_test/environment/ament_prefix_path.sh
+[4.432s] -- Up-to-date: /home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/share/ros2_bridge_test/environment/ament_prefix_path.dsv
+[4.432s] -- Up-to-date: /home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/share/ros2_bridge_test/environment/path.sh
+[4.432s] -- Up-to-date: /home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/share/ros2_bridge_test/environment/path.dsv
+[4.432s] -- Up-to-date: /home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/share/ros2_bridge_test/local_setup.bash
+[4.433s] -- Up-to-date: /home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/share/ros2_bridge_test/local_setup.sh
+[4.433s] -- Up-to-date: /home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/share/ros2_bridge_test/local_setup.zsh
+[4.433s] -- Up-to-date: /home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/share/ros2_bridge_test/local_setup.dsv
+[4.433s] -- Installing: /home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/share/ros2_bridge_test/package.dsv
+[4.433s] -- Up-to-date: /home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/share/ament_index/resource_index/packages/ros2_bridge_test
+[4.433s] -- Up-to-date: /home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/share/ros2_bridge_test/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.433s] -- Up-to-date: /home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/share/ros2_bridge_test/cmake/ros2_bridge_testConfig.cmake
+[4.433s] -- Up-to-date: /home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/share/ros2_bridge_test/cmake/ros2_bridge_testConfig-version.cmake
+[4.433s] -- Up-to-date: /home/amartya/dev_ws/src/ros2_bridge_test/install/ros2_bridge_test/share/ros2_bridge_test/package.xml
+[4.436s] Invoked command in '/home/amartya/dev_ws/src/ros2_bridge_test/build/ros2_bridge_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/eloquent /usr/bin/cmake --build /home/amartya/dev_ws/src/ros2_bridge_test/build/ros2_bridge_test --target install -- -j12 -l12
