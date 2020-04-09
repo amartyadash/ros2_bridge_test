@@ -5,7 +5,7 @@ using std::placeholders::_1;
 namespace ariitk::ros2_bridge_test {
 
 ImageSubscriber::ImageSubscriber(): Node("image_subscriber") {
-      subscription_ = this->create_subscription<sensor_msgs::msg::Image>("bridge_image", 20, std::bind(&ImageSubscriber::imageCallback, this, _1));
+      subscription_ = this->create_subscription<sensor_msgs::msg::Image>("bridge_image", 10, std::bind(&ImageSubscriber::imageCallback, this, _1));
       count_ = 0;
       num_ = 40; //TODO : Convert this to param
 }
@@ -20,17 +20,17 @@ void ImageSubscriber::imageCallback(const sensor_msgs::msg::Image::SharedPtr msg
     }
 
     frame_ = cv_ptr_->image; 
-    frame_id_ = msg->header.frame_id;
-    assert(frame_.empty()!=true); //does not work it seems
     
-    if (count_ < num_ && (!frame_.empty())) {
-        compression_params_.push_back(CV_IMWRITE_PNG_COMPRESSION);
-        compression_params_.push_back(9);
-        image_name_ =  std::to_string(count_++) + "-" + frame_id_  + ".png";
-
-        cv::imwrite(image_name_, frame_, compression_params_); //TODO : Make this always point to etc folder
+    assert(frame_.empty()!=true); //does not work it seems
+    if (!frame_.empty()) {
+        
+        auto time_point =std::chrono::system_clock::now(); 
+        std::time_t now_c = std::chrono::system_clock::to_time_t(time_point);
+        time_stamp_ = msg->header.stamp.sec;
+        std::cout <<  "Time from stamp "<< time_stamp_<< " Time in system: "<< now_c <<  std::endl;
+    
     }
-
+    
 }
 
 }// namespace ariitk::ros2_bridge_test
